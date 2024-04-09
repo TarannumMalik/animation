@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="" class="active">Home</a>
+            <a href="">About</a>
+            <a href="">About</a>
+            <a href="">Service</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <section class="paralax">
+        <img src="hill1.png" id="hill1">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <h2 id="text"> parallax Website</h2>
+        <img src="leaf.png" id="leaf">
+        <img src="plant.png" id="plant">
+
+    </section>
+    <section class="sec">
+        <h2>paralax scrolling website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat, voluptas nesciunt corporis unde nobis
+            numquam quos commodi praesentium voluptate rerum? Error repellat minima vitae perferendis tenetur,
+            aspernatur, recusandae deserunt possimus corrupti aut ea similique eius libero ad atque exercitationem
+            tempora ab ducimus? Ex reprehenderit sapiente accusantium nostrum. Dolor eaque recusandae iure maxime odit
+            veritatis atque dolore ducimus maiores amet velit dolores, nesciunt ab alias, mollitia repellendus odio eos
+            facere sapiente. Ipsa sequi fugiat eos, ullam ex mollitia necessitatibus quos. Impedit rem praesentium
+            repellat est unde expedita voluptates at saepe ex cupiditate itaque, quod dignissimos perferendis, quis quos
+            iusto atque. Earum id maiores deserunt et adipisci ab, a eaque explicabo nulla. Doloribus, vitae sint
+            suscipit inventore totam mollitia eveniet ratione recusandae laborum voluptates, iste voluptatem maxime
+            voluptatibus atque nihil voluptate?<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat, voluptas nesciunt corporis unde nobis
+            numquam quos commodi praesentium voluptate rerum? Error repellat minima vitae perferendis tenetur,
+            aspernatur, recusandae deserunt possimus corrupti aut ea similique eius libero ad atque exercitationem
+            tempora ab ducimus? Ex reprehenderit sapiente accusantium nostrum. Dolor eaque recusandae iure maxime odit
+            veritatis atque dolore ducimus maiores amet velit dolores, nesciunt ab alias, mollitia repellendus odio eos
+            facere sapiente. Ipsa sequi fugiat eos, ullam ex mollitia necessitatibus quos. Impedit rem praesentium
+            repellat est unde expedita voluptates at saepe ex cupiditate itaque, quod dignissimos perferendis, quis quos
+            iusto atque. Earum id maiores deserunt et adipisci ab, a eaque explicabo nulla. Doloribus, vitae sint
+            suscipit inventore totam mollitia eveniet ratione recusandae laborum voluptates, iste voluptatem maxime
+            voluptatibus atque nihil voluptate? <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat, voluptas nesciunt corporis unde nobis
+            numquam quos commodi praesentium voluptate rerum? Error repellat minima vitae perferendis tenetur,
+            aspernatur, recusandae deserunt possimus corrupti aut ea similique eius libero ad atque exercitationem
+            tempora ab ducimus? Ex reprehenderit sapiente accusantium nostrum. Dolor eaque recusandae iure maxime odit
+            veritatis atque dolore ducimus maiores amet velit dolores, nesciunt ab alias, mollitia repellendus odio eos
+            facere sapiente. Ipsa sequi fugiat eos, ullam ex mollitia necessitatibus quos. Impedit rem praesentium
+            repellat est unde expedita voluptates at saepe ex cupiditate itaque, quod dignissimos perferendis, quis quos
+            iusto atque. Earum id maiores deserunt et adipisci ab, a eaque explicabo nulla. Doloribus, vitae sint
+            suscipit inventore totam mollitia eveniet ratione recusandae laborum voluptates, iste voluptatem maxime
+            voluptatibus atque nihil voluptate?<br><br></p>
+    </section>
+    <script>
+        let text = document.getElementById('text');
+        let leaf = document.getElementById('leaf');
+        let hill1 = document.getElementById('hill1');
+        let hill4 = document.getElementById('hill4');
+        let hill5 = document.getElementById('hill5');
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            text.style.marginTop = value * 2.5 + 'px';
+            leaf.style.top = value * -1.5 + 'px';
+            leaf.style.left = value * 1.5 + 'px';
+            hill5.style.left = value * 1.5 + 'px';
+            hill4.style.left = value * -1.5 + 'px';
+            hill1.style.top = value * -1.5 + 'px';
+        })
+
+    </script>
+</body>
+
+</html>
